@@ -1,2 +1,1 @@
-# ibs
-Simple login written in Go
+# Simple login page in Go
