@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  ibs-login-db:
+    build: 
+      context: docker/
+      dockerfile: ibs-login-db.dockerfile
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+    image: ibs-login-db
+    ports:
+        - '3306:3306'
+    hostname: ibs-login-db
