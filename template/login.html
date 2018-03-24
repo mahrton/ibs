@@ -1,0 +1,27 @@
+{{ define "login" }}
+<html>
+    <head>
+        <title>{{.Title}}</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container" style="height: 100%;">
+            <div class="row align-items-center" style="height: 100%;">
+                <div class="col-md-4 offset-md-4">
+                    <form id="loginForm" action="/login" method="POST">
+                        <div class="row align-items-center">
+                            <input type="text" id="user_name" name="user_name" />
+                        </div>
+                        <div class="row">
+                            <input type="password" id="password" name="password" />
+                        </div>
+                        <div class="row">
+                            <button type="submit">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+{{ end }}

@@ -1,0 +1,18 @@
+{{define "index"}}
+<html>
+    <head>
+        <title>{{.Title}}</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    {{template "content" .}}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+{{end}}
